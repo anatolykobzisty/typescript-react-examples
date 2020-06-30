@@ -1,25 +1,34 @@
 {
+  // Настраивает параметры компиляции. Параметры называются также, как и в командной строке.
   "compilerOptions": {
+    // Тип кода создаваемого итогового файла.
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    // Набор библиотечных файлов полифилов, которые будут включены в итоговый выходной файл.
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // Разрешать компилировать файлы с JavaScript-кодом
     "allowJs": true,
+    // Не проверять типы, заданные во всех файлах описания типов (*.d.ts)
     "skipLibCheck": true,
+    // Создать хелперы __importStar и __importDefault для обеспечения совместимости с экосистемой Babel
     "esModuleInterop": true,
+    // Включить allowSyntheticDefaultImports для совместимости с системой типов
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    // Запретить несогласованные ссылки на один и тот же файл
     "forceConsistentCasingInFileNames": true,
+    // Определяет тип импорта кода в итоговом файле, прописанном в "outFile". Необходимо задавать при использовании опции "outFile".
     "module": "esnext",
+    // Определить способ поиска модулей в папках: как в Node.js или классический, как в TypeScript 1.5 и ниже.
     "moduleResolution": "node",
+    //  Позволяет импортировать json-файлы,
     "resolveJsonModule": true,
+    // Обрабатывать каждый файл, как отдельный изолированный модуль.
     "isolatedModules": true,
+    // Не создавать итоговый файл.
     "noEmit": true,
+    // Включать поддержку ".tsx" файлов
     "jsx": "react"
   },
-  "include": [
-    "src"
-  ]
+  // Секция "include" позволяет скомпилировать все файлы, находящиеся в заданных папках.
+  "include": ["src"]
 }
