@@ -34,6 +34,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'max-len': ["error", 120, { "ignoreUrls": true }],
+    'react/static-property-placement':0,
     'react/jsx-filename-extension': 0,
     'react/jsx-props-no-spreading': 0,
     'import/no-named-default': 0,
