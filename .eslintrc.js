@@ -33,7 +33,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'max-len': ["error", 120, { "ignoreUrls": true }],
+    'max-len': ["error", 130, { "ignoreUrls": true }],
     'react/jsx-filename-extension': 0,
     'react/jsx-props-no-spreading': 0,
     "react/state-in-constructor": 0,
