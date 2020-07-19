@@ -1,13 +1,12 @@
 import React from 'react';
 
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import ToDo from './containers/todo/todo';
+import Title from './components/title/title';
 
-const App:React.FC = ({ children }) => (
+const App = () => (
   <>
-    <Header />
-    {children}
-    <Footer />
+    <Title title="ToDo App" />
+    <ToDo />
   </>
 );
 
